@@ -24,4 +24,12 @@ export class LoginPage {
         await this.page.waitForLoadState('networkidle')
         await expect(this.page).toHaveURL(/.*admin/)
     }
+
+    async alertHaveText(text){
+        const alert = this.page.locator('span[class$=alert]')
+        await expect(alert).toHaveText(text)
+    }
+
+   
+    
 }
