@@ -1,19 +1,22 @@
 const { test, expect } = require('@playwright/test')
 const {LoginPage} = require('../pages/LoginPage')
 const {Toast} = require('../pages/Components')
+const {MoviesPage} = require('../pages/MoviesPage')
 
 let loginPage
+let moviesPage
 let toast
 
 test.beforeEach(async({page}) => {
   loginPage = new LoginPage(page)
   toast = new Toast(page)
+  moviesPage = new MoviesPage(page)
 })
 
 test('deve logar como administrador', async ({ page }) => {
   await loginPage.visit()
   await loginPage.submit('admin@zombieplus.com','pwd123')
-  await loginPage.isLoggedIn()
+  await moviesPage.isLoggedIn()
 
 })
 
