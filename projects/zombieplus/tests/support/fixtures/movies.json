@@ -1,0 +1,82 @@
+{
+  "world_war_z": {
+    "title": "Guerra Mundial Z",
+    "overview": "Um ex-investigador das Nações Unidas percorre o mundo em busca da origem de uma pandemia que transforma humanos em criaturas violentas e ameaça a sobrevivência da humanidade.",
+    "release_year": 2013,
+    "company": "Paramount Pictures",
+    "featured": false,
+    "cover": "images/world_war_z.png"
+  },
+  "dawn_of_the_dead": {
+    "title": "Madrugada dos Mortos",
+    "overview": "Após um surto que transforma pessoas em zumbis, um grupo de sobreviventes busca refúgio em um shopping center enquanto tenta escapar do caos.",
+    "release_year": 2004,
+    "company": "Universal Pictures",
+    "featured": false,
+    "cover": "images/dawn_of_the_dead.png"
+  },
+  "twenty_eight_days_later": {
+    "title": "Extermínio",
+    "overview": "Vinte e oito dias após um vírus devastador escapar de um laboratório, um homem acorda em uma Londres completamente tomada por infectados.",
+    "release_year": 2002,
+    "company": "Fox Searchlight Pictures",
+    "featured": false,
+    "cover": "images/twenty_eight_days_later.png"
+  },
+  "twenty_eight_weeks_later": {
+    "title": "Extermínio 2",
+    "overview": "Meses após o início da epidemia, uma tentativa de reconstruir a sociedade fracassa quando o vírus ressurge de forma ainda mais letal.",
+    "release_year": 2007,
+    "company": "Fox Atomic",
+    "featured": false,
+    "cover": "images/twenty_eight_weeks_later.png"
+  },
+  "train_to_busan": {
+    "title": "Invasão Zumbi",
+    "overview": "Durante uma viagem de trem pela Coreia do Sul, passageiros precisam lutar pela sobrevivência quando uma epidemia zumbi toma conta do país.",
+    "release_year": 2016,
+    "company": "Next Entertainment World",
+    "featured": false,
+    "cover": "images/train_to_busan.png"
+  },
+  "shaun_of_the_dead": {
+    "title": "Todo Mundo Quase Morto",
+    "overview": "Um vendedor comum tenta salvar seus amigos e familiares enquanto enfrenta um inesperado apocalipse zumbi com muito humor.",
+    "release_year": 2004,
+    "company": "Universal Pictures",
+    "featured": false,
+    "cover": "images/shaun_of_the_dead.png"
+  },
+  "zombieland": {
+    "title": "Zumbilândia",
+    "overview": "Quatro sobreviventes cruzam os Estados Unidos enfrentando zumbis enquanto seguem regras próprias para permanecer vivos.",
+    "release_year": 2009,
+    "company": "Columbia Pictures",
+    "featured": false,
+    "cover": "images/zombieland.png"
+  },
+  "warm_bodies": {
+    "title": "Meu Namorado é um Zumbi",
+    "overview": "Um jovem zumbi começa a recuperar sua humanidade após conhecer uma garota sobrevivente, mudando o destino dos dois mundos.",
+    "release_year": 2013,
+    "company": "Summit Entertainment",
+    "featured": false,
+    "cover": "images/warm_bodies.png"
+  },
+  "night_of_the_living_dead": {
+    "title": "A Noite dos Mortos-Vivos",
+    "overview": "Pessoas ficam presas em uma casa isolada enquanto mortos retornam à vida e cercam o local, dando origem ao gênero moderno de filmes de zumbi.",
+    "release_year": 1968,
+    "company": "Continental Distributing",
+    "featured": false,
+    "cover": "images/night_of_the_living_dead.png"
+  },
+  "resident_evil": {
+    "title": "Resident Evil: O Hóspede Maldito",
+    "overview": "Após um acidente em um laboratório secreto, um vírus mortal é liberado, transformando funcionários em mortos-vivos enquanto uma equipe tenta conter a ameaça.",
+    "release_year": 2002,
+    "company": "Screen Gems",
+    "featured": false,
+    "cover": "images/resident_evil.png"
+  }
+}
