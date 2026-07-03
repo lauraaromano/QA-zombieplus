@@ -4,16 +4,16 @@
     "overview": "Um ex-investigador das Nações Unidas percorre o mundo em busca da origem de uma pandemia que transforma humanos em criaturas violentas e ameaça a sobrevivência da humanidade.",
     "release_year": 2013,
     "company": "Paramount Pictures",
-    "featured": false,
-    "cover": "images/world_war_z.png"
+    "featured": true,
+    "cover": "/covers/movies/wwz.png"
   },
-  "dawn_of_the_dead": {
-    "title": "Madrugada dos Mortos",
-    "overview": "Após um surto que transforma pessoas em zumbis, um grupo de sobreviventes busca refúgio em um shopping center enquanto tenta escapar do caos.",
-    "release_year": 2004,
+  "duplicate": {
+    "title": "Resident Evil: O Hospedeiro",
+    "overview": "Alice se junta a sobreviventes para enfrentar a Corporação Umbre",
+    "release_year": 2002,
     "company": "Universal Pictures",
     "featured": false,
-    "cover": "images/dawn_of_the_dead.png"
+    "cover": "/covers/movies/resident-evil.jpg"
   },
   "twenty_eight_days_later": {
     "title": "Extermínio",
