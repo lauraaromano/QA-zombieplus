@@ -9,8 +9,8 @@ test('deve cadastrar um lead na fila de espera', async ({ page }) => {
   await page.leads.openLeadModal()
   await page.leads.submitLeadForm(leadName, leadEmail)
 
-  const message = 'Agradecemos por compartilhar seus dados conosco. Em breve, nossa equipe entrará em contato!'
-  await page.toast.containText(message)
+  const message = 'Agradecemos por compartilhar seus dados conosco. Em breve, nossa equipe entrará em contato.'
+  await page.popup.haveText(message)
 
 });
 
@@ -32,8 +32,8 @@ test('não deve cadastrar quando um email que já existe', async ({ page, reques
   await page.leads.openLeadModal()
   await page.leads.submitLeadForm(leadName, leadEmail)
 
-  const message = 'O endereço de e-mail fornecido já está registrado em nossa fila de espera.'
-  await page.toast.containText(message)
+  const message = 'Verificamos que o endereço de e-mail fornecido já consta em nossa lista de espera. Isso significa que você está um passo mais perto de aproveitar nossos serviços.'
+  await page.popup.haveText(message)
 
 });
 
@@ -44,7 +44,7 @@ test('não deve cadastrar com email incorreto', async ({ page }) => {
   await page.leads.submitLeadForm('Laura Teste', 'laura.com.br')
 
 
-  await page.leads.alertHaveText('Email incorreto')
+  await page.leads.haveText('Email incorreto')
 
 });
 
@@ -56,7 +56,7 @@ test('não deve cadastrar quando o nome não é preenchido', async ({ page }) =>
   await page.leads.submitLeadForm('', 'laura@gmail.com')
 
 
- await page.leads.alertHaveText('Campo obrigatório')
+ await page.leads.haveText('Campo obrigatório')
 
 });
 
@@ -67,7 +67,7 @@ test('não deve cadastrar quando o email não é preenchido', async ({ page }) =
   await page.leads.submitLeadForm('Laura Teste', '')
 
 
-  await page.leads.alertHaveText('Campo obrigatório')
+  await page.leads.haveText('Campo obrigatório')
 
 });
 
@@ -78,6 +78,6 @@ test('não deve cadastrar quando nenhum campo é preenchido', async ({ page }) =
   await page.leads.submitLeadForm('','')
 
   // fazer array para cada validação que o sistema dá
-  await page.leads.alertHaveText(['Campo obrigatório', 'Campo obrigatório'])
+  await page.leads.haveText(['Campo obrigatório', 'Campo obrigatório'])
 
 });

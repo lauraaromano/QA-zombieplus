@@ -11,17 +11,17 @@
     "title": "Resident Evil: O Hospedeiro",
     "overview": "Alice se junta a sobreviventes para enfrentar a Corporação Umbre",
     "release_year": 2002,
-    "company": "Universal Pictures",
+    "company": "Columbia Pictures",
     "featured": false,
     "cover": "/covers/movies/resident-evil.jpg"
   },
-  "twenty_eight_days_later": {
-    "title": "Extermínio",
+  "to_remove": {
+    "title": "A Noite dos Mortos-Vivos",
     "overview": "Vinte e oito dias após um vírus devastador escapar de um laboratório, um homem acorda em uma Londres completamente tomada por infectados.",
     "release_year": 2002,
-    "company": "Fox Searchlight Pictures",
+    "company": "Columbia Pictures",
     "featured": false,
-    "cover": "images/twenty_eight_days_later.png"
+    "cover": "/covers/movies/mortos-vivos.jpg"
   },
   "twenty_eight_weeks_later": {
     "title": "Extermínio 2",

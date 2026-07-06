@@ -32,6 +32,8 @@ export class Leads {
           await expect(this.page.locator('.alert')).toHaveText(target)
     }
 
+    async haveText(target) {
+          await expect(this.page.locator('.alert')).toHaveText(target)
+    }
 
 }
-
