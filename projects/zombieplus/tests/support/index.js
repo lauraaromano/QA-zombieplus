@@ -4,6 +4,7 @@ const { Leads } = require('./actions/Leads')
 const { Login } = require('./actions/Login')
 const { Popup } = require('./actions/Components')
 const { Movies } = require('./actions/Movies')
+const { Tvshows } = require('./actions/Tvshows')
 
 const { Api } = require('./api')
 
@@ -16,6 +17,7 @@ const test = base.extend({
         context['leads'] = new Leads(page)
         context['login'] = new Login(page)
         context['movies'] = new Movies(page)
+        context['tvshows'] = new Tvshows(page)
         context['popup'] = new Popup(page)
 
         await use(context)
