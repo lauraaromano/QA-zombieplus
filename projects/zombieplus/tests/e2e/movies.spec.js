@@ -1,6 +1,7 @@
 const { test, expect } = require('../support')
 const data = require('../support/fixtures/movies.json')
 const { executeSQL } = require('../support/database')
+const { request } = require('node:http')
 
 test.beforeAll(async () => {
   await executeSQL(`DELETE FROM movies`)
@@ -32,7 +33,6 @@ test('deve poder remover um filme', async ({ page, request }) => {
 test('não deve cadastrar quando o título é duplicado', async ({ page, request }) => {
 
   const movie = data.duplicate
-
   await request.api.postMovie(movie)
 
   await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin')
@@ -55,4 +55,17 @@ test('não deve cadastrar quando os campos obrigatórios não são preenchidos',
     'Campo obrigatório'
   ])
 
+})
+
+test('deve realizar busca pelo termo zumbi', async ({ page, request }) => {
+  const movies = data.search
+
+  for (const m of movies.data) {
+    await request.api.postMovie(m)
+  }
+
+  await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin')
+  await page.movies.search(movies.input)
+
+  await page.movies.tableHave(movies.outputs)
 })
